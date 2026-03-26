@@ -1,4 +1,4 @@
-import { Github, Code2, Database, BarChart3, Lightbulb } from "lucide-react";
+import { Github, Code2, Database, BarChart3, Lightbulb, Zap, Target } from "lucide-react";
 
 export default function Projects() {
   const projects = [
@@ -10,26 +10,22 @@ export default function Projects() {
       color: "from-green-500 to-emerald-600",
       accentColor: "green",
       description:
-        "Developed and launched a Chrome extension that converts UCSD WebReg screenshots or text into .ics calendar files, enabling seamless schedule import into personal calendars.",
+        "Chrome extension that converts UCSD WebReg data into .ics calendar files for easy calendar imports.",
       highlights: [
-        "Built Chrome extension to convert UCSD WebReg data into .ics calendar files for easy calendar imports",
-        "Integrated Google Calendar API to automate calendar event creation from parsed schedule data",
-        "Implemented OCR technology to extract course names, sections, and details from images and text",
-        "Maintained and improved extension based on user feedback and bug fixes",
-        "Reached 100+ active UCSD users managing their schedules with the extension",
+        "Integrated Google Calendar API to automate calendar event creation",
+        "Achieved 100+ active UCSD users managing their schedules",
       ],
       technologies: [
         "CSS",
         "HTML",
         "JavaScript",
         "Google API",
-        "Application Development",
       ],
       github: "https://github.com/Matthew-Paoletta/WebReg2Cal",
     },
     {
       title: "Playoff Win Predictor",
-      subtitle: "Data Analysis Project",
+      subtitle: "Baseball Statistical Analysis",
       date: "Personal Project",
       icon: BarChart3,
       color: "from-blue-600 to-blue-700",
@@ -37,39 +33,98 @@ export default function Projects() {
       description:
         "Statistical analysis of baseball datasets to identify performance metrics that correlate with postseason success.",
       highlights: [
-        "Collected, cleaned, and analyzed baseball datasets spanning multiple seasons while formatting these findings in a simple to read Jupyter Notebook",
-        "Performed correlation analysis across more than 30 performance metrics to study postseason success factors",
-        "Created visualizations to compare trends and clearly communicate statistical relationships and findings",
+        "Analyzed 30+ performance metrics to predict postseason success",
+        "Created visualizations to communicate statistical relationships",
       ],
       technologies: [
         "Python",
-        "Jupyter Notebooks",
+        "Pandas",
         "Data Analysis",
         "Visualization",
       ],
       github: "https://github.com/Matthew-Paoletta/Playoff-Win-Predictor",
     },
     {
-      title: "Factors of Collaboration",
-      subtitle: "Group Data Science Project & Collaboration Predictor",
-      date: "Class Project - Winter 2025",
+      title: "CSE 150A Movie Recommender",
+      subtitle: "Hidden Markov Model Recommender System",
+      date: "Class Project - Spring 2025",
       icon: Lightbulb,
       color: "from-purple-500 to-purple-700",
       accentColor: "purple",
       description:
-        "A data science project analyzing which factors most strongly predict music artist collaborations. Framed as a binary classification problem using artist popularity, background, and audio features.",
+        "Probabilistic movie recommender using HMM to model hidden industry regimes and temporal dynamics.",
       highlights: [
-        "Built a binary classification model to predict music artist collaborations based on multiple feature sets",
-        "Analyzed artist popularity metrics, background information, and audio characteristics to identify key collaboration predictors",
-        "Implemented feature engineering and selection techniques to optimize model performance",
-        "Developed comprehensive visualizations and statistical analysis to communicate findings and insights from the data",
+        "Built HMM to identify 2 distinct industry regimes with temporal dependencies",
+        "Achieved 50.6% improvement over random baseline recommendations",
       ],
       technologies: [
         "Python",
-        "Pandas",
-        "NumPy",
         "Scikit-learn",
-        "Jupyter Notebook",
+        "Probabilistic Models",
+        "Jupyter",
+      ],
+      github: "https://github.com/Matthew-Paoletta/CSE150A_Project",
+    },
+    {
+      title: "Postseason Performance Predictor",
+      subtitle: "Baseball Performance Analytics",
+      date: "Personal Project",
+      icon: Target,
+      color: "from-orange-500 to-orange-600",
+      accentColor: "orange",
+      description:
+        "Advanced statistical analysis of baseball datasets using machine learning to predict pennant winners and evaluate team performance.",
+      highlights: [
+        "Built predictive models identifying key pitching and defensive thresholds",
+        "Discovered that elite pitching is more critical than batting for postseason success",
+      ],
+      technologies: [
+        "Python",
+        "Machine Learning",
+        "Statistical Analysis",
+        "Jupyter",
+      ],
+      github: "https://github.com/Matthew-Paoletta/Postseason-Performance-Predictor",
+    },
+    {
+      title: "The Snowballing Effect",
+      subtitle: "League of Legends Match Prediction",
+      date: "Class Project - Winter 2025",
+      icon: Zap,
+      color: "from-indigo-500 to-indigo-600",
+      accentColor: "indigo",
+      description:
+        "Predictive analytics project analyzing whether League of Legends match winners can be predicted from early-game statistics at the 15-minute mark.",
+      highlights: [
+        "Analyzed 13+ years of competitive LoL data (90,000+ matches) across worldwide leagues",
+        "Built Random Forest model achieving 75.3% accuracy predicting match outcomes",
+      ],
+      technologies: [
+        "Python",
+        "Scikit-learn",
+        "Data Analysis",
+        "Classification",
+      ],
+      github: "https://github.com/Matthew-Paoletta/The-Snowballing-Effect",
+    },
+    {
+      title: "Factors of Collaboration",
+      subtitle: "Music Collaboration Prediction",
+      date: "Class Project - Winter 2025",
+      icon: Database,
+      color: "from-red-500 to-red-600",
+      accentColor: "red",
+      description:
+        "Binary classification model predicting music artist collaborations based on popularity, background, and audio features.",
+      highlights: [
+        "Built classification model analyzing artist popularity and audio characteristics",
+        "Implemented feature engineering to optimize model performance",
+      ],
+      technologies: [
+        "Python",
+        "Scikit-learn",
+        "Feature Engineering",
+        "Jupyter",
       ],
       github: "https://github.com/Matthew-Paoletta/Factors-of-Collaboration",
     },
@@ -101,6 +156,30 @@ export default function Projects() {
         border: "border-purple-200",
         button: "bg-purple-600 hover:bg-purple-700",
       },
+      orange: {
+        textLight: "text-orange-100",
+        textDark: "text-orange-600",
+        textDarker: "text-orange-700",
+        bgLight: "bg-orange-50",
+        border: "border-orange-200",
+        button: "bg-orange-600 hover:bg-orange-700",
+      },
+      indigo: {
+        textLight: "text-indigo-100",
+        textDark: "text-indigo-600",
+        textDarker: "text-indigo-700",
+        bgLight: "bg-indigo-50",
+        border: "border-indigo-200",
+        button: "bg-indigo-600 hover:bg-indigo-700",
+      },
+      red: {
+        textLight: "text-red-100",
+        textDark: "text-red-600",
+        textDarker: "text-red-700",
+        bgLight: "bg-red-50",
+        border: "border-red-200",
+        button: "bg-red-600 hover:bg-red-700",
+      },
     };
     return colorMap[accentColor] || colorMap.green;
   };
@@ -122,14 +201,14 @@ export default function Projects() {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => {
               const IconComponent = project.icon;
               const colors = getColorClasses(project.accentColor);
               return (
                 <div
                   key={index}
-                  className="group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition duration-300 flex flex-col"
+                  className="group relative rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 ease-out flex flex-col"
                 >
                   {/* Colored Header Section */}
                   <div
