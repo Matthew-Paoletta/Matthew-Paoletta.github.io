@@ -1,7 +1,7 @@
 import { Github, Code2, Database, BarChart3, Lightbulb, Zap, Target } from "lucide-react";
 
 export default function Projects() {
-  const projects = [
+  const allProjects = [
     {
       title: "WebReg2Cal",
       subtitle: "Course Schedule Parser Chrome Extension",
@@ -12,8 +12,8 @@ export default function Projects() {
       description:
         "Chrome extension that converts UCSD WebReg data into .ics calendar files for easy calendar imports.",
       highlights: [
+        "Reached 150+ active UCSD users managing their schedules with the extension",
         "Integrated Google Calendar API to automate calendar event creation",
-        "Achieved 100+ active UCSD users managing their schedules",
       ],
       technologies: [
         "CSS",
@@ -22,48 +22,7 @@ export default function Projects() {
         "Google API",
       ],
       github: "https://github.com/Matthew-Paoletta/WebReg2Cal",
-    },
-    {
-      title: "Playoff Win Predictor",
-      subtitle: "Baseball Statistical Analysis",
-      date: "Personal Project",
-      icon: BarChart3,
-      color: "from-blue-600 to-blue-700",
-      accentColor: "blue",
-      description:
-        "Statistical analysis of baseball datasets to identify performance metrics that correlate with postseason success.",
-      highlights: [
-        "Analyzed 30+ performance metrics to predict postseason success",
-        "Created visualizations to communicate statistical relationships",
-      ],
-      technologies: [
-        "Python",
-        "Pandas",
-        "Data Analysis",
-        "Visualization",
-      ],
-      github: "https://github.com/Matthew-Paoletta/Playoff-Win-Predictor",
-    },
-    {
-      title: "CSE 150A Movie Recommender",
-      subtitle: "Hidden Markov Model Recommender System",
-      date: "Class Project - Spring 2025",
-      icon: Lightbulb,
-      color: "from-purple-500 to-purple-700",
-      accentColor: "purple",
-      description:
-        "Probabilistic movie recommender using HMM to model hidden industry regimes and temporal dynamics.",
-      highlights: [
-        "Built HMM to identify 2 distinct industry regimes with temporal dependencies",
-        "Achieved 50.6% improvement over random baseline recommendations",
-      ],
-      technologies: [
-        "Python",
-        "Scikit-learn",
-        "Probabilistic Models",
-        "Jupyter",
-      ],
-      github: "https://github.com/Matthew-Paoletta/CSE150A_Project",
+      chromeWebstore: "https://chromewebstore.google.com/detail/webreg2cal/lpokllkbcdgioagipllhfcpjmdnjjdci?hl=en",
     },
     {
       title: "Postseason Performance Predictor",
@@ -85,6 +44,48 @@ export default function Projects() {
         "Jupyter",
       ],
       github: "https://github.com/Matthew-Paoletta/Postseason-Performance-Predictor",
+    },
+    {
+      title: "Movie Recommender",
+      subtitle: "Hidden Markov Model Recommender System",
+      date: "Class Project - Spring 2025",
+      icon: Lightbulb,
+      color: "from-purple-500 to-purple-700",
+      accentColor: "purple",
+      description:
+        "Probabilistic movie recommender using HMM to model hidden industry regimes and temporal dynamics.",
+      highlights: [
+        "Built HMM to identify 2 distinct industry regimes with temporal dependencies",
+        "Achieved 50.6% improvement over random baseline recommendations",
+      ],
+      technologies: [
+        "Python",
+        "Scikit-learn",
+        "Probabilistic Models",
+        "Jupyter",
+      ],
+      github: "https://github.com/Matthew-Paoletta/CSE150A_Project",
+    },
+    {
+      title: "Playoff Win Predictor",
+      subtitle: "Baseball Statistical Analysis",
+      date: "Personal Project",
+      icon: BarChart3,
+      color: "from-blue-600 to-blue-700",
+      accentColor: "blue",
+      description:
+        "Statistical analysis of baseball datasets to identify performance metrics that correlate with postseason success.",
+      highlights: [
+        "Analyzed 30+ performance metrics to predict postseason success",
+        "Created visualizations to communicate statistical relationships",
+      ],
+      technologies: [
+        "Python",
+        "Pandas",
+        "Data Analysis",
+        "Visualization",
+      ],
+      github: "https://github.com/Matthew-Paoletta/Playoff-Win-Predictor",
     },
     {
       title: "The Snowballing Effect",
@@ -129,6 +130,8 @@ export default function Projects() {
       github: "https://github.com/Matthew-Paoletta/Factors-of-Collaboration",
     },
   ];
+
+  const projects = allProjects;
 
   const getColorClasses = (accentColor) => {
     const colorMap = {
@@ -278,7 +281,18 @@ export default function Projects() {
                     </div>
 
                     {/* Links */}
-                    <div className="pt-4 border-t border-gray-200">
+                    <div className="pt-4 border-t border-gray-200 flex gap-3 flex-wrap">
+                      {project.chromeWebstore && (
+                        <a
+                          href={project.chromeWebstore}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`inline-flex items-center gap-2 px-4 py-2.5 ${colors.button} text-white font-medium rounded-lg transition transform hover:scale-105`}
+                        >
+                          <Code2 className="w-5 h-5" />
+                          View on Chrome Web Store
+                        </a>
+                      )}
                       <a
                         href={project.github}
                         target="_blank"
