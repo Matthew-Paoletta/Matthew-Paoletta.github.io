@@ -88,7 +88,6 @@ export default function Hero() {
 
             <div className="flex flex-col gap-2 text-gray-600 pt-4">
               <p className="text-base">📧 matthew.paoletta73@gmail.com</p>
-              <p className="text-base">📍 San Diego, CA</p>
             </div>
           </div>
 

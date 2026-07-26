@@ -91,7 +91,7 @@ export default function Projects() {
     {
       title: "Movie Recommender",
       subtitle: "Hidden Markov Model Recommender System",
-      date: "Class Project - Spring 2025",
+      date: "Group Project - Spring 2025",
       icon: Lightbulb,
       color: "from-purple-500 to-purple-700",
       accentColor: "purple",
@@ -154,7 +154,7 @@ export default function Projects() {
     {
       title: "Factors of Collaboration",
       subtitle: "Music Collaboration Prediction",
-      date: "Class Project - Winter 2025",
+      date: "Group Project - Winter 2025",
       icon: Database,
       color: "from-red-500 to-red-600",
       accentColor: "red",
