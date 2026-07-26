@@ -19,15 +19,15 @@ export default function Hero() {
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
               I build software that solves real problems. From developing a{" "}
               <span className="font-semibold">
-                Chrome extension helping students manage deadlines
+                Chrome extension used by 150+ UC San Diego students
               </span>{" "}
               to{" "}
               <span className="font-semibold">
-                analyzing performance metrics to predict postseason success
+                building data-driven tools and predictive models
               </span>
-              , I combine technical depth with practical impact. UCSD
-              Mathematics & Computer Science student passionate about creating
-              elegant solutions to complex challenges.
+              , I turn complex challenges into practical, measurable solutions
+              through thoughtful application development and technical problem
+              solving.
             </p>
 
             {/* Key Skills/Highlights */}

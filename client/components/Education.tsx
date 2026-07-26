@@ -16,6 +16,7 @@ export default function Education() {
         "Software Tools",
         "Computational Theory",
         "Numerical Analysis",
+        "Probabilistic Models",
       ],
     },
     {
@@ -31,6 +32,7 @@ export default function Education() {
         "Data Science in Practice",
         "Statistical Methods",
         "Data Structures and Algorithms",
+        "Data Visualization",
       ],
     },
   ];
@@ -62,13 +64,13 @@ export default function Education() {
                 University of California, San Diego
               </h3>
               <p className="text-lg text-white text-opacity-95 leading-relaxed max-w-3xl">
-                I've been attending UCSD since 2022, pursuing a{" "}
+                Earned a{" "}
                 <span className="font-semibold">
-                  major in Mathematical Computer Science
+                  B.S. in Mathematical Computer Science
                 </span>{" "}
                 and a{" "}
-                <span className="font-semibold">minor in Data Science</span>.
-                Expected to graduate in June 2026.
+                <span className="font-semibold">minor in Data Science</span>{" "}
+                from UC San Diego.
               </p>
             </div>
           </div>

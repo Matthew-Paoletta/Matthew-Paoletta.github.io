@@ -25,6 +25,49 @@ export default function Projects() {
       chromeWebstore: "https://chromewebstore.google.com/detail/webreg2cal/lpokllkbcdgioagipllhfcpjmdnjjdci?hl=en",
     },
     {
+      title: "El Niño Rewires the Pacific",
+      subtitle: "Interactive Climate Data Visualization",
+      date: "Group Project - Spring 2026",
+      icon: BarChart3,
+      color: "from-cyan-500 to-blue-600",
+      accentColor: "blue",
+      description:
+        "Interactive visualizations that make complex climate data accessible by showing how the Pacific Ocean’s El Niño region influences weather patterns across the Americas.",
+      highlights: [
+        "Designed data-driven visuals to explain climate patterns to everyday users",
+        "Built an interactive web experience that connects ocean conditions to regional weather",
+      ],
+      technologies: [
+        "JavaScript",
+        "Data Visualization",
+        "D3.js",
+        "Web Development",
+      ],
+      github: "https://github.com/Matthew-Paoletta/Final-Project-DSC-106",
+      liveDemo: "https://matthew-paoletta.github.io/Final-Project-DSC-106/",
+    },
+    {
+      title: "Sports-Reference Table Downloader",
+      subtitle: "Command-Line Data Collection Tool",
+      date: "Group Project - Spring 2026",
+      icon: Database,
+      color: "from-amber-500 to-orange-600",
+      accentColor: "orange",
+      description:
+        "Command-line tool that downloads every statistics table from sports-reference.com family sites as individual CSV files.",
+      highlights: [
+        "Automated collection of tables from baseball, basketball, football, and hockey reference pages",
+        "Converted web-based sports data into reusable CSV files for analysis",
+      ],
+      technologies: [
+        "Python",
+        "Command Line",
+        "Web Scraping",
+        "CSV Data",
+      ],
+      github: "https://github.com/Matthew-Paoletta/DSC-190-Final-Project",
+    },
+    {
       title: "Postseason Performance Predictor",
       subtitle: "Baseball Performance Analytics",
       date: "Personal Project",
@@ -282,6 +325,17 @@ export default function Projects() {
 
                     {/* Links */}
                     <div className="pt-4 border-t border-gray-200 flex gap-3 flex-wrap">
+                      {project.liveDemo && (
+                        <a
+                          href={project.liveDemo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`inline-flex items-center gap-2 px-4 py-2.5 ${colors.button} text-white font-medium rounded-lg transition transform hover:scale-105`}
+                        >
+                          <Code2 className="w-5 h-5" />
+                          View Live Project
+                        </a>
+                      )}
                       {project.chromeWebstore && (
                         <a
                           href={project.chromeWebstore}
