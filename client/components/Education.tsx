@@ -61,7 +61,7 @@ export default function Education() {
 
             <div className="relative z-10">
               <h3 className="text-3xl sm:text-4xl font-bold mb-4">
-                University of California, San Diego
+                University of California, San&nbsp;Diego
               </h3>
               <p className="text-lg text-white text-opacity-95 leading-relaxed max-w-3xl">
                 Earned a{" "}
@@ -70,7 +70,7 @@ export default function Education() {
                 </span>{" "}
                 and a{" "}
                 <span className="font-semibold">minor in Data Science</span>{" "}
-                from UC San Diego.
+                from UC San&nbsp;Diego.
               </p>
             </div>
           </div>
