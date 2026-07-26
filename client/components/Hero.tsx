@@ -19,7 +19,7 @@ export default function Hero() {
             <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
               I build software that solves real problems. From developing a{" "}
               <span className="font-semibold">
-                Chrome extension used by 150+ UC San Diego students
+                Chrome extension with over 340 installations
               </span>{" "}
               to{" "}
               <span className="font-semibold">

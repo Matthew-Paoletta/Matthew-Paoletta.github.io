@@ -12,7 +12,7 @@ export default function Projects() {
       description:
         "Chrome extension that converts UCSD WebReg data into .ics calendar files for easy calendar imports.",
       highlights: [
-        "Reached 150+ active UCSD users managing their schedules with the extension",
+        "Reached over 340 installations from UCSD users managing their schedules with the extension",
         "Integrated Google Calendar API to automate calendar event creation",
       ],
       technologies: [
@@ -47,9 +47,9 @@ export default function Projects() {
       liveDemo: "https://matthew-paoletta.github.io/Final-Project-DSC-106/",
     },
     {
-      title: "Sports-Reference Table Downloader",
+      title: "Sports Reference Scraper",
       subtitle: "Command-Line Data Collection Tool",
-      date: "Group Project - Spring 2026",
+      date: "Class Project - Spring 2026",
       icon: Database,
       color: "from-amber-500 to-orange-600",
       accentColor: "orange",
