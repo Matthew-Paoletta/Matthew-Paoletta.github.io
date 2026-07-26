@@ -63,7 +63,7 @@ export default function Education() {
               <h3 className="text-3xl sm:text-4xl font-bold mb-4">
                 University of California, San&nbsp;Diego
               </h3>
-              <p className="text-lg text-white text-opacity-95 leading-relaxed max-w-3xl">
+              <p className="text-lg text-white text-opacity-95 leading-relaxed max-w-3xl whitespace-nowrap">
                 Earned a{" "}
                 <span className="font-semibold">
                   B.S. in Mathematical Computer Science
